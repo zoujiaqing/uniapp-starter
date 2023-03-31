@@ -31,6 +31,7 @@ module.exports = {
   // 它的默认 parser 会将代码转换为 AST，AST 被 plugin&rules 用来校验和生成错误信息
   plugins: [],
   rules: {
+    'no-undef': 0,
     // 检测未使用的变量，函数和函数的参数
     'no-unused-vars': 'off',
     // 检测未使用的变量，函数和函数的参数 for typescript
