@@ -34,3 +34,18 @@ declare module '*.vue'
 //   }
 //   export default component
 // }
+
+interface menuButtonInfoType {
+  bottom: number
+  height: number
+  left: number
+  right: number
+  top: number
+  width: number
+}
+declare interface golbalSysInfoType {
+  statusBarHeight: number
+  windowWidth: number
+  menuButtonInfo?: menuButtonInfoType
+  navBarHeight?: number
+}
