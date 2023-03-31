@@ -8,6 +8,8 @@ import type { RequestOptionsMethod, RequestOptionsMethodAll } from '@/utils/requ
 /**
  * 发送请求
  */
+
+// type handleBaseRequestType()
 function handleBaseRequest(
   url: string,
   method: RequestOptionsMethod,
@@ -35,12 +37,13 @@ function handleBaseRequest(
         msg: '未登录',
       })
     }
-    // 有token并且不是Null
+    // 有token并且不是Null 则拼token给请求头
     if (token && token !== null) header[TOKENNAME] = 'Bearer ' + token
   }
 
   // 返回封装请求
-  return new Promise((reslove, reject) => {
+  // resolve: (value: unknown) => void, reject: (reason?: any) => void) => void
+  return new Promise((reslove, reject): any => {
     // 加载提示
     uni.showLoading({
       title: '加载中',
@@ -55,7 +58,7 @@ function handleBaseRequest(
       header: header,
       data: data || {},
       success: (res: any) => {
-        console.log('res-------', res)
+        console.log('uni请求封装 -------', res)
         // 成功关闭loading
         uni.hideLoading()
         // 如果有token并且token不为null则修改状态管理的token
@@ -63,14 +66,16 @@ function handleBaseRequest(
         // store.commit('LOGIN', {
         //   token: res.data.token,
         // })
+        // console.log('noVerify ------', noVerify, res)
         // 如果未验证抛出返回对象
         if (noVerify) {
           reslove(res)
         } else if (res.statusCode === 200) {
-          // 如果验证了并且code = 200 则抛出返回的data
+          // console.log('statusCode ------', res.statusCode)
+          // 如果验证了并且 code = 200 则抛出返回的data
           reslove(res.data)
         } else {
-          // code不是200也没有验证标识抛出错误
+          // code 不是200也没有验证标识抛出错误
           reject(res.data.message || '系统错误')
         }
       },

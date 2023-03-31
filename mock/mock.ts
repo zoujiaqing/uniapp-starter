@@ -46,6 +46,7 @@ app.use(async (ctx: Context) => {
 })
 
 // koa already had middleware to deal with the error, just register the error event
+// 注册错误事件
 app.on('error', (err, ctx: Context) => {
   log4.error(err) //log all errors
   ctx.status = 500
