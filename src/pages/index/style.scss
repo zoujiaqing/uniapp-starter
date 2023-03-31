@@ -1,0 +1,133 @@
+.wrapper {
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+  position: relative;
+}
+
+.logo {
+  height: 200rpx;
+  width: 200rpx;
+  margin-top: 200rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50rpx;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36rpx;
+}
+
+.swiper-view,
+.grid-entrance,
+.check-shop {
+  width: 100%;
+}
+
+// 自取 or 外卖
+.grid-entrance {
+  padding: 15px;
+  box-sizing: border-box;
+  .uni-grid-wrap {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08);
+  }
+  image {
+    width: 80px;
+    height: 80px;
+  }
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+  }
+  uni-grid-item {
+    &:first-child {
+      .uni-grid-item::after {
+        content: '';
+        border-right: 1px solid #e1e1e1;
+        position: absolute;
+        right: 0;
+        top: 35px;
+        width: 1px;
+        height: 130px;
+      }
+    }
+  }
+  .uni-grid-item {
+    position: relative;
+  }
+
+  .grid-item-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    position: relative;
+  }
+}
+
+// 选择店铺
+.check-shop {
+  .uni-card {
+    border-radius: 10px;
+    .uni-card__header {
+      background-color: #ededed;
+      padding: 15px;
+      .uni-card__header-avatar {
+        border-radius: 22px;
+        border: 4px solid #fff;
+      }
+      .uni-card__header-content-title {
+        font-weight: bold;
+      }
+    }
+    .uni-body {
+      display: flex;
+      .add-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-evenly;
+        padding-left: 5px;
+        .title {
+          font-size: 22px;
+        }
+        .address-info {
+          display: flex;
+          flex-direction: column;
+          color: #9f9f9f;
+        }
+      }
+      .tags-grid {
+        height: 24px;
+        .grid-item-box {
+          display: flex;
+          .text {
+            margin-left: 5px;
+          }
+        }
+      }
+      image {
+        width: 150px;
+        height: 140px;
+      }
+    }
+  }
+}
