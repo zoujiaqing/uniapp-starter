@@ -20,6 +20,7 @@ specifiers:
   '@dcloudio/uni-mp-weixin': 3.0.0-alpha-3070720230316001
   '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-3070720230316001
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-3070720230316001
+  '@dcloudio/uni-ui': ^1.4.26
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3070720230316001
   '@testing-library/jest-dom': ^5.16.5
   '@types/faker': 5.1.5
@@ -81,6 +82,7 @@ dependencies:
   '@dcloudio/uni-mp-toutiao': 3.0.0-alpha-3070720230316001_postcss@8.4.21+vue@3.2.47
   '@dcloudio/uni-mp-weixin': 3.0.0-alpha-3070720230316001_postcss@8.4.21+vue@3.2.47
   '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-3070720230316001_postcss@8.4.21+vue@3.2.47
+  '@dcloudio/uni-ui': 1.4.26
   pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
   vue: 3.2.47
   vue-i18n: 9.2.2_vue@3.2.47
@@ -1824,6 +1826,10 @@ packages:
       - supports-color
       - ts-node
       - vue
+    dev: false
+
+  /@dcloudio/uni-ui/1.4.26:
+    resolution: {integrity: sha512-JpYXNi9WEmFeTcF6EWrksrMqA0HEl76nxW/Imd0PW1qm/7TORAGSpvMmEDYrMQ3vIbRQFV+n6bhiJIWi34u/5Q==}
     dev: false
 
   /@dcloudio/vite-plugin-uni/3.0.0-alpha-3070720230316001_whwgao7u5rcykp6xefoe4wicni:
