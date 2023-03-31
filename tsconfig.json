@@ -7,7 +7,13 @@
       "@/*": ["./src/*"]
     },
     "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types", "jest"]
+    "types": ["@dcloudio/types", "jest"],
+    // 导入 x.d.ts 报错 index.d.ts”不是模块。
+    "typeRoots": ["node_modules/@types"],
+    // 此导入从不用作值，必须使用 "import type" ，因为 "importsNotUsedAsValues" 设置为 "error"
+    "importsNotUsedAsValues": "remove",
+    // 是一种类型，在同时启用了 "preserveValueImports" 和 "isolatedModules" 时，必须使用仅类型导入进行导入。
+    "preserveValueImports": false
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "./types"]
 }
