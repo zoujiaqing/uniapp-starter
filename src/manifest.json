@@ -59,12 +59,14 @@
     },
     "usingComponents": true,
     "permission": {
-      "scope.userLocation": {
-        "desc": ""
-      }
+      // "scope.userLocation": {
+      //   "desc": ""
+      // }
     },
     // 开启分包优化
-    "optimization": { "subPackages": true }
+    "optimization": { "subPackages": true },
+    // 小程序按需注入
+    "lazyCodeLoading": "requiredComponents"
   },
   "mp-alipay": {
     "usingComponents": true
