@@ -16,9 +16,11 @@ onLaunch(() => {
   // console.log('golbalSysInfo------', golbalSysInfo)
 
   // #ifndef H5 || APP-PLUS || MP-ALIPAY
-  // 获取胶囊位置
+  // 获取胶囊位置 如果非上面的3个平台则是微信小程序，则执行下面的代码
   const menuButtonInfo = uni.getMenuButtonBoundingClientRect()
   console.log('menuButtonInfo----', menuButtonInfo)
+
+  // 胶囊按钮的 bottom - statusBar的高度+胶囊按钮和 statuusBar 的上间距
   golbalSysInfo.sysInfo.navBarHeight =
     menuButtonInfo.bottom -
     golbalSysInfo.sysInfo.statusBarHeight +
@@ -44,4 +46,7 @@ onHide(() => {
 
 // export golbalSysInfo
 </script>
-<style></style>
+<style lang="scss">
+/*每个页面公共css */
+@import '@/static/style/app.scss';
+</style>
