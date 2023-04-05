@@ -7,12 +7,6 @@ test('add stores count', async () => {
   // 获取整个wrapper
   const wrapper = mount(HelloWorld)
 
-  // Assert the rendered text of the component 断点测试步骤
-  /*
-		expect()返回被称作“expectation”的对象。
-		toBe()被称作matcher
-		expect(wrapper.classes()).toContain('hidden')
-   */
   // 获取dom: title的text判断是不是'0'
   expect(wrapper.find('.title').text()).toBe('0')
   // 触发按钮点击
@@ -21,12 +15,20 @@ test('add stores count', async () => {
   expect(acount.count).toBe(1)
   // 再获取dom: title的text判断是不是'1'
   expect(wrapper.find('.title').text()).toBe('1')
-  // vue2: wrapper.vm.method 测试写在里面的函数
-  // wrapper.vm.$nextTick(() => {
-  //   // expect(wrapper.classes()).not.toContain('hidden')
-  //   expect(wrapper.find('.title').text()).toBe('1')
-  // })
 })
+
+// Assert the rendered text of the component 断点测试步骤
+/*
+		expect()返回被称作“expectation”的对象。
+		toBe()被称作matcher
+		expect(wrapper.classes()).toContain('hidden')
+   */
+
+// vue2: wrapper.vm.method 测试写在里面的函数
+// wrapper.vm.$nextTick(() => {
+//   // expect(wrapper.classes()).not.toContain('hidden')
+//   expect(wrapper.find('.title').text()).toBe('1')
+// })
 
 // the store I want to mock
 // export const useStore1 = defineStore({
