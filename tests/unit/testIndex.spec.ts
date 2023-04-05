@@ -30,9 +30,9 @@
 // })
 
 import { mount } from '@vue/test-utils'
-// test('add stores count', async () => {
-//   console.log(111)
-// })
+test('test2', async () => {
+  console.log(111)
+})
 
 // import { fetchUserInfo } from '../request'
 
