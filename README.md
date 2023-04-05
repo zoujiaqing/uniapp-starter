@@ -1,37 +1,15 @@
+### uni-app(vue3+vite+typescript+pinia+uni-ui)微信小程序APP工程模版
+
 ```
 vue3-vite-uniapp
-├─ .gitignore
-├─ index.html
-├─ package.json
-├─ pnpm-lock.yaml
-├─ README.md
-├─ src
-│  ├─ App.vue
-│  ├─ env.d.ts
-│  ├─ main.ts
-│  ├─ manifest.json
-│  ├─ pages
-│  │  └─ index
-│  │     └─ index.vue
-│  ├─ pages.json
-│  ├─ shime-uni.d.ts
-│  ├─ static
-│  │  └─ logo.png
-│  └─ uni.scss
-├─ tsconfig.json
-└─ vite.config.ts
-
-
-
-
-vue3-vite-uniapp├─ .gitignore            //git忽略文件
+├─ .gitignore            //git忽略文件
 ├─ index.html            // 入口
 ├─ package.json            // 安装依赖配置
 ├─ pnpm-lock.yaml        // pnpm锁定配置
 ├─ README.md            // md说明
 ├─ src│
 ├─ App.vue            // 小程序页面状态
-│ ├─ env.d.ts            // ts申明 for ?
+│ ├─ env.d.ts            // 环境变量
 │ ├─ main.ts            // 入口js，导入了app.vue
 │ ├─ manifest.json        // uniapp相关配置应用名称、appid、logo、版本等打包信息
 │ ├─ api
@@ -52,7 +30,7 @@ vue3-vite-uniapp├─ .gitignore            //git忽略文件
 │ │ ├─ request.d.ts    // 申明
 │ │ └─ request.ts        // uni的请求方法封装
 │ ├─ pages.json        // 小程序路由
-│ ├─ shime-uni.d.ts    // ts申明 for ?
+│ ├─ shime-uni.d.ts    // ts申明 for vue
 │ └─ uni.scss            // uni-app内置的常用样式变量
 ├─ .vscode
 │ └─ settings.json    // 修改vscode本地设置
@@ -79,9 +57,45 @@ vue3-vite-uniapp├─ .gitignore            //git忽略文件
 
 ```
 
-### todo
+搭建步骤参考小波博客 https://blog.ganxb2.com/3462.html
 
-1. style 拆成文件导入，参考 taro 小程序结构
-2. mock 接口服务弄到 vercel 去
-3. commit 提交校验
-4. git 的提交 husky 校验钩子
+
+
+### 😦目标功能
+
+#### done:
+
+1. 集成 vue3、typescript、pinia、vite、uni-ui、nodejs-koa、pnpm，使用 vue3 模版渲染思路开发
+2. 多人协作 eslint、prettier 代码格式校验规范， vsocde 配置
+3. jest 单元测试
+4. pinia 全局状态管理
+5. 小程序分包配置
+6. 小程序自定义顶部导航
+7. 页面：首页、点餐
+
+#### todo:
+
+- git提交 husky 校验
+- git提交 commit 校验
+- 改成 tsx 完善整个系统流程
+- 生产环境去除 console
+- 打包 app 流程
+- vite 深入学习实践
+
+<br>
+
+### 🧐主要技术栈
+
+- vue3
+- typescript
+- uni-ui
+- pinia
+- vite
+- pnpm
+- koa
+- nodejs
+- sass
+- jest
+- eslint+prettier
+- husky 
+- commit 
