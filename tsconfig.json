@@ -8,7 +8,7 @@
     },
     "lib": ["esnext", "dom"],
     "types": ["@dcloudio/types", "jest"],
-    // 导入 x.d.ts 报错 index.d.ts”不是模块。
+    // 导入 x.d.ts 报错 x.d.ts”不是模块。
     "typeRoots": ["node_modules/@types"],
     // 此导入从不用作值，必须使用 "import type" ，因为 "importsNotUsedAsValues" 设置为 "error"
     "importsNotUsedAsValues": "remove",
