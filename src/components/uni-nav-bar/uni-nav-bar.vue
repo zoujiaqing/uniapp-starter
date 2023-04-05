@@ -113,6 +113,7 @@ const rightIconWidth = computed<HeightProperty<string | number> | undefined>(() 
 })
 
 const handleClickLeft = (): void => {
+  // 1. 表示要通知父页面的函数 2. 表示值
   emits('clickLeft', 'emit返回??')
 }
 
