@@ -14,7 +14,6 @@ module.exports = {
   testEnvironment: 'jsdom',
   // 测试文件 自己写的
   testMatch: ['<rootDir>/tests/unit/*.spec.ts?(x)'],
-
   transform: {
     '^.+\\.vue$': 'vue-jest',
     '^.+\\js$': 'babel-jest',
