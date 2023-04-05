@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679916292294" clover="3.2.0">
-  <project timestamp="1679916292294" name="All files">
-    <metrics statements="93" coveredstatements="90" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="2" elements="100" coveredelements="94" complexity="0" loc="93" ncloc="93" packages="3" files="4" classes="4"/>
+<coverage generated="1680629668148" clover="3.2.0">
+  <project timestamp="1680629668148" name="All files">
+    <metrics statements="104" coveredstatements="101" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="2" elements="111" coveredelements="105" complexity="0" loc="104" ncloc="104" packages="3" files="4" classes="4"/>
     <package name="src.components.counter">
       <metrics statements="35" coveredstatements="35" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="counter.vue" path="C:\myWeb\vue3-vite-uniapp\src\components\counter\counter.vue">
+      <file name="counter.vue" path="C:\myWeb\uniapp_vue3_vite_pinia\src\components\counter\counter.vue">
         <metrics statements="35" coveredstatements="35" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -45,7 +45,7 @@
     </package>
     <package name="src.stores">
       <metrics statements="29" coveredstatements="28" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
-      <file name="counter.ts" path="C:\myWeb\vue3-vite-uniapp\src\stores\counter.ts">
+      <file name="counter.ts" path="C:\myWeb\uniapp_vue3_vite_pinia\src\stores\counter.ts">
         <metrics statements="26" coveredstatements="25" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -74,7 +74,7 @@
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
       </file>
-      <file name="index.ts" path="C:\myWeb\vue3-vite-uniapp\src\stores\index.ts">
+      <file name="index.ts" path="C:\myWeb\uniapp_vue3_vite_pinia\src\stores\index.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -82,9 +82,9 @@
       </file>
     </package>
     <package name="tests">
-      <metrics statements="29" coveredstatements="27" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="request.ts" path="C:\myWeb\vue3-vite-uniapp\tests\request.ts">
-        <metrics statements="29" coveredstatements="27" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="40" coveredstatements="38" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="request.ts" path="C:\myWeb\uniapp_vue3_vite_pinia\tests\request.ts">
+        <metrics statements="40" coveredstatements="38" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -114,6 +114,17 @@
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
       </file>
     </package>
   </project>
