@@ -1,35 +1,22 @@
-export interface userInfoType {
-  cookies: any[]
-  data: Data2Type
-  errMsg: string
-  header: HeaderType
-  statusCode: number
-}
+import { goodsType } from '@/api/goods.d'
 
-interface HeaderType {
-  Vary: string
-  'Access-Control-Allow-Origin': string
-  'Content-Type': string
-  'Content-Length': string
-  Date: string
-  'Keep-Alive': string
-  Connection: string
-}
-
-interface Data2Type {
-  code: number
-  msg: string
-  data: DataType
-}
-
-interface DataType {
-  avatar: string
-  email: string
+export interface cartType {
+  cate_id: number
+  quantity: number
+  props_text: string
   id: number
-  introduction: string
   name: string
-  password: string
-  phone: string
-  roles: string[]
-  username: string
+  price: number
+  image: string
+  use_property: number
+  props: string
+}
+
+export interface stateType {
+  menuScrollIntoView: string
+  currentCateId: number
+  cateScrollTop: number
+  sizeCalcState: boolean
+  goods: goodsType[]
+  cart: cartType[]
 }
