@@ -25,6 +25,7 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  //
-  "json.format.enable": false
+  // json格式化禁止
+  "json.format.enable": false,
+  "editor.inlayHints.enabled": "off"
 }
