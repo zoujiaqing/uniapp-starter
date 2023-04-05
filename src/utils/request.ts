@@ -4,7 +4,7 @@ import { HEADER, HEADERPARAMS, TOKENNAME, HTTP_REQUEST_URL } from '@/config/app'
 // import { useCounterStore } from '@/stores/counter'
 // import { useStore } from 'vuex'
 // 导入申明
-import type { RequestOptionsMethod, RequestOptionsMethodAll } from '@/utils/request.d'
+import { RequestOptionsMethod, RequestOptionsMethodAll } from './request.d'
 /**
  * 发送请求
  */
