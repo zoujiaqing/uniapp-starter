@@ -1,17 +1,10 @@
 import request from '@/utils/request'
+import { goodsResType } from '@/api/goods.d'
 
 /**
- * 精选课程
+ * 商品
  *
  */
-export function fetchRecommendGoodsList(data) {
-  return request?.get?.('/product/recommend', data, { noAuth: true })
-}
-
-/**
- * 商品详情
- *
- */
-export function fetchGoodsDetail(data) {
-  return request?.get?.('/product/detail', data, { noAuth: true })
+export function fetchGoodsList(data: any): Promise<goodsResType> {
+  return request?.get?.('/goods/goodsList', data, { noAuth: true })
 }
