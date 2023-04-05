@@ -3,14 +3,12 @@
  * 导入 start
  * 顺序：1.依赖库		2.请求	3.常量 	4.组件 5. ts申明
  */
-// import { ref, reactive } from 'vue'
 import { fetchUserInfo } from '@/api/user'
 import { gridList, avatar, tagsGrids } from './data'
-
 import pinia from '@/stores/index' // == createPinia()
 import { useGolbalSysInfoStore } from '@/stores/golbalSysInfo'
 
-import { userInfoType } from './types'
+import { userInfoType } from '@/api/user.d'
 
 /**
  * 变量 start
@@ -29,11 +27,11 @@ const handleGridClick = (): void => {
 
 /**
  * 调用 start
- * @fetchUserInfo 用户信息接口
+ * @fetchUserInfo 用户信息接口 - 测试mock服务
  */
 fetchUserInfo()
   .then((r: userInfoType) => {
-    console.log('r', r)
+    console.log('用户信息---', r)
   })
   .catch((err: any) => console.log(err))
 </script>
@@ -51,7 +49,7 @@ fetchUserInfo()
           <view class="uni-body">
             <view class="add-content">
               <view class="title"
-                >天府人文图书馆店<uni-icons type="location" size="24" color="#97af13"></uni-icons
+                >天府人文艺术图书馆店<uni-icons type="location" size="24" color="#97af13"></uni-icons
               ></view>
               <view class="address-info">
                 <text>四川省成都市天府111</text>
@@ -92,37 +90,3 @@ fetchUserInfo()
 <style lang="scss">
 @import './style.scss';
 </style>
-
-<!-- <view :style="{ height: golbalSysInfo.sysInfo.statusBarHeight + 'px' }"></view> -->
-<!-- 自定义导航 -->
-<!-- <uni-nav-bar dark :fixed="true" shadow background-color="#fa2c19" status-bar title="廿壴茶姬"></uni-nav-bar> -->
-
-<!-- <image class="logo" src="/static/logo.png" />
-      <view class="text-area">
-        <text class="title">{{ title }}</text>
-      </view>
-      <counter></counter>
-      <uni-card cover="https://web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png">
-        <text>这是一个带封面和操作栏的卡片示例，此示例展示了封面插槽和操作栏插槽的用法。</text>
-        <template v-slot:actions>
-          <view class="card-actions">
-            <view class="card-actions-item" @click="actionsClick('分享')">
-              <uni-icons type="pengyouquan" size="18" color="#999"></uni-icons>
-              <text class="card-actions-item-text">分享</text>
-            </view>
-            <view class="card-actions-item" @click="actionsClick('点赞')">
-              <uni-icons type="heart" size="18" color="#999"></uni-icons>
-              <text class="card-actions-item-text">点赞</text>
-            </view>
-            <view class="card-actions-item" @click="actionsClick('评论')">
-              <uni-icons type="chatbubble" size="18" color="#999"></uni-icons>
-              <text class="card-actions-item-text">评论</text>
-            </view>
-          </view>
-        </template>
-      </uni-card> -->
-<!--// const title = ref<string>('Hello')
-		// const statusBarHeight = ref<number>(20)
-		// const actionsClick = (text: string): void => { // uni.showToast({ // title: text, // icon: 'none', // }) // } //
-		const handleBack = (e: any): void => { // console.log('返回----------', e) // }
--->
