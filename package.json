@@ -41,7 +41,10 @@
     "lint:fix": "eslint --ext .ts,tsx,vue src/** --no-error-on-unmatched-pattern --fix",
     "mock": "cd mock && ts-node-dev mock.ts",
     "test": "jest",
-    "test:unit": "jest --coverage"
+    "test:unit": "jest --coverage",
+    "dev:weixin": "uni -p mp-weixin --mode dev",
+    "test:weixin": "uni -p mp-weixin --mode test",
+    "build:weixin": "uni build -p mp-weixin --mode pro"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3070720230316001",
