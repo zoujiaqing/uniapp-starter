@@ -5,11 +5,10 @@ import { HEADER, HEADERPARAMS, TOKENNAME, HTTP_REQUEST_URL } from '@/config/app'
 // import { useStore } from 'vuex'
 // 导入申明
 import { RequestOptionsMethod, RequestOptionsMethodAll } from './request.d'
+
 /**
  * 发送请求
  */
-
-// type handleBaseRequestType()
 function handleBaseRequest(
   url: string,
   method: RequestOptionsMethod,
