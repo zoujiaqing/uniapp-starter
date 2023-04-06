@@ -1,5 +1,5 @@
 {
-  "name": "廿壴uniapp",
+  "name": "廿壴博客",
   "appid": "__UNI__EE0CC9C",
   "description": "廿壴",
   "versionName": "1.0.0",
@@ -58,13 +58,14 @@
       "minified": true
     },
     "usingComponents": true,
-    "permission": {
-      // "scope.userLocation": {
-      //   "desc": ""
-      // }
-    },
+    "permission": {},
+    // "scope.userLocation": {
+    //   "desc": ""
+    // }
     // 开启分包优化
-    "optimization": { "subPackages": true },
+    "optimization": {
+      "subPackages": true
+    },
     // 小程序按需注入
     "lazyCodeLoading": "requiredComponents"
   },
