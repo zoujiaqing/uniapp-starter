@@ -25,4 +25,6 @@
     "tabIndent": "insertSpaces",
     "tabSize": 2
   }
+  // uni-app 找不到 app.json
+  // "miniprogramRoot": "./dist/build/mp-weixin"
 }
