@@ -3,19 +3,17 @@
  * 导入 start
  * 顺序：1.依赖库		2.请求	3.常量 	4.组件 5. ts申明
  */
-import { ref } from 'vue'
+// import { ref } from 'vue'
 import { fetchUserInfo } from '@/api/user'
 
 import pinia from '@/stores/index' // == createPinia()
 import { useGolbalSysInfoStore } from '@/stores/golbalSysInfo'
 
-import { userInfoType } from './types'
+import { userInfoType } from '@/api/user.d'
 
 /**
  * 变量 start
  */
-const title = ref<string>('Hello')
-// const statusBarHeight = ref<number>(20)
 const golbalSysInfo = useGolbalSysInfoStore(pinia)
 console.log('customGlobalData------', golbalSysInfo.sysInfo)
 
@@ -27,9 +25,6 @@ const actionsClick = (text: string): void => {
     title: text,
     icon: 'none',
   })
-}
-const handleBack = (e: any): void => {
-  console.log('返回----------', e)
 }
 
 /**
@@ -45,28 +40,18 @@ fetchUserInfo()
 <template>
   <!-- <view :style="{ height: golbalSysInfo.sysInfo.statusBarHeight + 'px' }"></view> -->
   <!-- 自定义导航 -->
-  <uni-nav-bar
-    dark
-    :fixed="true"
-    shadow
-    background-color="#fa2c19"
-    status-bar
-    left-icon="left"
-    left-text="返回"
-    title="廿壴茶姬"
-    @clickLeft="handleBack"
-  ></uni-nav-bar>
+  <uni-nav-bar dark :fixed="true" shadow background-color="#97AF13" status-bar title="茶姬到"></uni-nav-bar>
 
   <view class="content">
-    <view class="swiper-view">
+    <!-- <view class="swiper-view">
       <uni-swiper></uni-swiper>
-    </view>
+    </view> -->
 
-    <image class="logo" src="/static/logo.png" />
+    <!-- <image class="logo" src="/static/logo.png" />
     <view class="text-area">
       <text class="title">{{ title }}</text>
-    </view>
-    <counter></counter>
+    </view> -->
+    <!-- <counter></counter> -->
     <uni-card cover="https://web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png">
       <text>这是一个带封面和操作栏的卡片示例，此示例展示了封面插槽和操作栏插槽的用法。</text>
       <template v-slot:actions>

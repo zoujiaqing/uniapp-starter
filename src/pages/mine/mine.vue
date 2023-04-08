@@ -9,7 +9,7 @@ import { fetchUserInfo } from '@/api/user'
 import pinia from '@/stores/index' // == createPinia()
 import { useGolbalSysInfoStore } from '@/stores/golbalSysInfo'
 
-import { userInfoType } from './types'
+import { userInfoType } from '@/api/user.d'
 
 /**
  * 变量 start
@@ -22,15 +22,6 @@ console.log('customGlobalData------', golbalSysInfo.sysInfo)
 /**
  * 函数 start
  */
-const actionsClick = (text: string): void => {
-  uni.showToast({
-    title: text,
-    icon: 'none',
-  })
-}
-const handleBack = (e: any): void => {
-  console.log('返回----------', e)
-}
 
 /**
  * 调用 start
@@ -43,49 +34,18 @@ fetchUserInfo()
 </script>
 
 <template>
-  <!-- <view :style="{ height: golbalSysInfo.sysInfo.statusBarHeight + 'px' }"></view> -->
   <!-- 自定义导航 -->
-  <uni-nav-bar
-    dark
-    :fixed="true"
-    shadow
-    background-color="#fa2c19"
-    status-bar
-    left-icon="left"
-    left-text="返回"
-    title="廿壴茶姬"
-    @clickLeft="handleBack"
-  ></uni-nav-bar>
+  <uni-nav-bar dark :fixed="true" shadow background-color="#97AF13" status-bar title="茶姬独享"></uni-nav-bar>
 
   <view class="content">
     <view class="swiper-view">
       <uni-swiper></uni-swiper>
     </view>
 
-    <image class="logo" src="/static/logo.png" />
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
     <counter></counter>
-    <uni-card cover="https://web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png">
-      <text>这是一个带封面和操作栏的卡片示例，此示例展示了封面插槽和操作栏插槽的用法。</text>
-      <template v-slot:actions>
-        <view class="card-actions">
-          <view class="card-actions-item" @click="actionsClick('分享')">
-            <uni-icons type="pengyouquan" size="18" color="#999"></uni-icons>
-            <text class="card-actions-item-text">分享</text>
-          </view>
-          <view class="card-actions-item" @click="actionsClick('点赞')">
-            <uni-icons type="heart" size="18" color="#999"></uni-icons>
-            <text class="card-actions-item-text">点赞</text>
-          </view>
-          <view class="card-actions-item" @click="actionsClick('评论')">
-            <uni-icons type="chatbubble" size="18" color="#999"></uni-icons>
-            <text class="card-actions-item-text">评论</text>
-          </view>
-        </view>
-      </template>
-    </uni-card>
   </view>
 </template>
 

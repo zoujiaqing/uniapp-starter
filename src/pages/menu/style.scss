@@ -20,6 +20,11 @@ page {
 .loading-sketch {
   flex: 1;
 }
+.loading-sketch {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 .container {
   overflow: hidden;
@@ -780,4 +785,8 @@ page {
       }
     }
   }
+}
+
+button:after {
+  border: none;
 }
