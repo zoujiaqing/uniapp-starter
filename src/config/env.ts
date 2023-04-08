@@ -7,16 +7,13 @@ import prod from './.env.pro'
 const NODE_ENV = import.meta.env.MODE
 
 let ENV_VAR: { BASE_API: string } = { BASE_API: 'dev' }
-if (NODE_ENV === 'dev') {
-  console.log('开发---')
+if (NODE_ENV === 'dev' || NODE_ENV === 'development') {
   ENV_VAR = dev
 } else if (NODE_ENV === 'test') {
-  console.log('测试---')
   ENV_VAR = test
 } else if (NODE_ENV === 'pre') {
   ENV_VAR = pre
-} else if (NODE_ENV === 'pro') {
-  console.log('生产---')
+} else if (NODE_ENV === 'pro' || NODE_ENV === 'production') {
   ENV_VAR = prod
 }
 // else if (NODE_ENV === 'demo') {
