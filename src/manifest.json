@@ -44,6 +44,10 @@
       "ios": {},
       /* SDK配置 */
       "sdkConfigs": {}
+    },
+    "compatible": {
+      // true表示忽略版本检查提示框，HBuilderX1.9.0及以上版本支持
+      "ignoreVersion": true
     }
   },
   /* 快应用特有相关 */
