@@ -1,5 +1,7 @@
 ### uni-app(vue3+vite+typescript+pinia+uni-ui)微信小程序APP工程模版
 
+![uni-app(vue3+vite+typescript+pinia+uni-ui)微信小程序APP工程模版](https://article.biliimg.com/bfs/article/c9b2a733abb357ca9370bf51fe2985fd3ae8c6ba.jpg@1e_1c.webp)
+
 ```
 vue3-vite-uniapp
 ├─ .gitignore            //git忽略文件
@@ -36,7 +38,9 @@ vue3-vite-uniapp
 │ └─ settings.json    // 修改vscode本地设置
 ├─ types
 │ └─ global.d.ts        // ts全局申明
-├─ mock│ ├─ controller        // 各种业务接口
+
+├─ mock│ 
+├─ controller        // 各种业务接口
 │ │ ├─ user.ts        // 用户相关接口
 │ │ └─ banner.ts        // banner图接口
 │ ├─ middleware        // 前后端交互最重要的就是两个参数 request 和 respond ，每一个中间件执行完毕应该进入下一个中间件，因此还需要一个 next 参数，用来启动下一个中间件。
@@ -71,6 +75,8 @@ vue3-vite-uniapp
 4. pinia 全局状态管理
 5. 小程序分包配置
 6. 小程序自定义顶部导航
+6. nodejs-koa 接口服务
+6. 多环境 api 接口判断
 7. 页面：首页、点餐
 
 #### todo:
@@ -79,6 +85,7 @@ vue3-vite-uniapp
 - git提交 commit 校验
 - 改成 tsx 完善整个系统流程
 - 生产环境去除 console
+- nodejs-koa 提取到vercel做成在线 api 服务
 - 打包 app 流程
 - vite 深入学习实践
 
