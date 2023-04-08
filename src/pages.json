@@ -27,16 +27,18 @@
       "path": "pages/take-foods/take-foods",
       "style": {
         "navigationBarTitleText": "茶姬到",
-        "navigationBarTextStyle": "black",
-        "navigationBarBackgroundColor": "#ffffff"
+        "navigationStyle": "custom"
+        // "navigationBarTextStyle": "black",
+        // "navigationBarBackgroundColor": "#ffffff"
       }
     },
     {
       "path": "pages/mine/mine",
       "style": {
         "navigationBarTitleText": "茶姬独享",
-        "navigationBarTextStyle": "black",
-        "navigationBarBackgroundColor": "#ffffff"
+        "navigationStyle": "custom"
+        // "navigationBarTextStyle": "black",
+        // "navigationBarBackgroundColor": "#ffffff"
       }
     }
     // {
