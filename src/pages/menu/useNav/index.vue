@@ -73,13 +73,15 @@ watch(
           <view class="iconfont iconarrow-right"></view>
         </view>
         <view class="store-location">
-          <image src="/static/images/order/location.png" style="width: 30rpx; height: 30rpx" class="mr-10"></image>
+          <uni-icons type="location" size="24" color="#97af13"></uni-icons>
+          <!-- <image src="/static/images/order/location.png" style="width: 30rpx; height: 30rpx" class="mr-10"></image> -->
           <text>距离您 {{ props.store.distance_text }}</text>
         </view>
       </view>
       <view class="left overflow-hidden" v-else>
         <view class="d-flex align-items-center overflow-hidden">
-          <image src="/static/images/order/location.png" style="width: 30rpx; height: 30rpx" class="mr-10"></image>
+          <uni-icons type="location" size="24" color="#97af13"></uni-icons>
+          <!-- <image src="/static/images/order/location.png" style="width: 30rpx; height: 30rpx" class="mr-10"></image> -->
           <view class="font-size-extra-lg text-color-base font-weight-bold text-truncate">
             {{ address.street }}
           </view>

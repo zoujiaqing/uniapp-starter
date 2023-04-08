@@ -49,8 +49,8 @@ fetchUserInfo()
           <view class="uni-body">
             <view class="add-content">
               <view class="title"
-                >天府人文艺术图书馆店<uni-icons type="location" size="24" color="#97af13"></uni-icons
-              ></view>
+                ><uni-icons type="location" size="24" color="#97af13"></uni-icons>天府人文艺术图书馆店</view
+              >
               <view class="address-info">
                 <text>四川省成都市天府111</text>
                 <text>营业时间：06:00 - 22:00</text>
