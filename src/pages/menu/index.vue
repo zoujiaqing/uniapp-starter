@@ -141,7 +141,7 @@ const handleShowGoodDetailModal = (item: goodsType, good: goodsListType): void =
 
 const handleReduceFromCart = (item: goodsType, good: goodsListType): void => {}
 
-const handleAddToCart = (cate: goodsType, good: goodsListType, quantity: number = 1) => {
+const handleAddToCart = (cate: goodsType, good: goodsListType, quantity: number = 1): void => {
   const index = state.cart.findIndex(item => {
     if (good.use_property) {
       // good?.props_text
@@ -194,7 +194,6 @@ const computedGoodCartNum = computed((): ((id: number) => number) => {
  * 调用 start
  */
 handleInit()
-console.log(111)
 
 // FIXME: 怎么没进？？？ 官网有坑，子组件修改，这里ref只能去监听 x.value
 watch(

@@ -27,15 +27,6 @@ onLaunch(() => {
     (menuButtonInfo.top - golbalSysInfo.sysInfo.statusBarHeight)
   golbalSysInfo.sysInfo.windowWidth = menuButtonInfo.left
   // #endif
-
-  // this.navBarHeight = menuButtonInfo.bottom - info.statusBarHeight + (menuButtonInfo.top - info.statusBarHeight)
-  // this.windowWidth = menuButtonInfo.left
-  // 状态栏高度  statusBarHeight, windowWidth, menuButtonInfo, navBarHeight
-  // this.statusBarHeight = info.statusBarHeight
-  // 窗口宽度
-  // this.windowWidth = info.windowWidth
-
-  // App.provide('$customGlobalData', customGlobalData)
 })
 onShow(() => {
   console.log('App Show')
@@ -50,3 +41,10 @@ onHide(() => {
 /*每个页面公共css */
 @import '@/static/style/app.scss';
 </style>
+
+<!-- 
+	// this.navBarHeight = menuButtonInfo.bottom - info.statusBarHeight + (menuButtonInfo.top - info.statusBarHeight) //
+this.windowWidth = menuButtonInfo.left // 状态栏高度 statusBarHeight, windowWidth, menuButtonInfo, navBarHeight //
+this.statusBarHeight = info.statusBarHeight // 窗口宽度 // this.windowWidth = info.windowWidth //
+App.provide('$customGlobalData', customGlobalData)
+-->
