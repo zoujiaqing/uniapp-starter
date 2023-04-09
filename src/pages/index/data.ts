@@ -9,7 +9,7 @@ export const gridList = [
   },
 ]
 
-export const avatar = 'https://blog.ganxb2.com/img/avatar.png'
+export const avatar = 'https://gumpbobo.github.io/img/avatar.png'
 export const tagsGrids = [
   {
     icon: 'cart-filled',

@@ -66,7 +66,7 @@ fetchUserInfo()
                 </uni-grid>
               </view>
             </view>
-            <image src="https://blog.ganxb2.com/img/about/blog_log.png" class="icon"></image>
+            <image src="https://gumpbobo.github.io/img/about/blog_log.png" class="icon"></image>
           </view>
         </uni-card>
       </view>
