@@ -1,6 +1,6 @@
 ### uni-app(vue3+vite+typescript+pinia+uni-ui)微信小程序APP工程模版
 
-![uni-app(vue3+vite+typescript+pinia+uni-ui)微信小程序APP工程模版](https://article.biliimg.com/bfs/article/c9b2a733abb357ca9370bf51fe2985fd3ae8c6ba.jpg@1e_1c.webp)
+![uni-app(vue3+vite+typescript+pinia+uni-ui)微信小程序APP工程模版](https://pic.rmb.bdstatic.com/bjh/a993f5432132a9833ec3e3d0c0586e118236.jpeg)
 
 ```
 vue3-vite-uniapp
