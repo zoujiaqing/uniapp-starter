@@ -3,6 +3,28 @@
   height: 100vh;
 }
 
+.icons {
+  margin: 26rpx;
+  padding-bottom: 100rpx;
+}
+
+.grid-item-box {
+  text-align: center;
+  height: 120rpx;
+  
+}
+
+ .grid-item-box .text {
+	  font-size: 24rpx;
+  }
+
+.icon {
+  display: block;
+  margin: 0 auto;
+  width: 138rpx;
+  height: 138rpx;
+}
+
 .content {
   display: flex;
   flex-direction: column;

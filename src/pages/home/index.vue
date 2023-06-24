@@ -42,7 +42,40 @@ fetchUserInfo()
       <uni-swiper></uni-swiper>
     </view>
     <!-- swiper-view end -->
-
+    <view class="icons">
+      <uni-grid :column="4" :showBorder="false">
+        <uni-grid-item>
+			<view class="grid-item-box">
+			  <image src="/static/images/icons/hecheng.png" class="icon"></image>
+			  <text class="text">合成活动</text>
+		  </view>
+        </uni-grid-item>
+        <uni-grid-item>
+			<view class="grid-item-box">
+			  <image src="/static/images/icons/zhihuan.png" class="icon"></image>
+			  <text class="text">置换活动</text>
+		  </view>
+        </uni-grid-item>
+        <uni-grid-item>
+			<view class="grid-item-box">
+			  <image src="/static/images/icons/yaoqing.png" class="icon"></image>
+			  <text class="text">邀请好友</text>
+		  </view>
+        </uni-grid-item>
+        <uni-grid-item>
+			<view class="grid-item-box">
+			  <image src="/static/images/icons/xinshou.png" class="icon"></image>
+			  <text class="text">新手指引</text>
+		  </view>
+        </uni-grid-item>
+        <uni-grid-item>
+			<view class="grid-item-box">
+			  <image src="/static/images/icons/shangxin.png" class="icon"></image>
+			  <text class="text">新品兑换</text>
+		  </view>
+        </uni-grid-item>
+      </uni-grid>
+    </view>
     <view class="content">
       <view class="check-shop">
         <uni-card title="HI~~" sub-title="加入廿壴茶姬的大家庭享有更多优惠哟~" extra="" :thumbnail="avatar" spacing="0">
